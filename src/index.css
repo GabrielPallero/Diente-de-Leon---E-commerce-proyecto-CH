@@ -1,4 +1,23 @@
+body{
+  background-color: rgb(210, 210, 166);
+}
 img{
   height: 60px;
   width: 60px;
+}
+#logo{
+  width: 250px;
+  height: 250px;
+}
+button{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-style: inherit;
+  font-weight: 150;
+  background-color: beige;
+ 
+}
+#saludo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(1, 64, 64);
 }
