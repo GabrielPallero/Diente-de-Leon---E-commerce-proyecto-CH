@@ -1,4 +1,4 @@
-const Item = ({id, name, img, price, stock}) =>{
+const Item = ({id, name, img,description, price, stock}) =>{
     return(
         <article className="CardItem">
             <header className="Header">
@@ -18,7 +18,7 @@ const Item = ({id, name, img, price, stock}) =>{
         <footer className="ItemDescripcion"> 
         <button className="Option">Ver detalle</button>
         </footer>
-        </article>
+        </article> 
     )
 }
 export default Item

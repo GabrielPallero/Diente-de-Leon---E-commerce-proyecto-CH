@@ -1,5 +1,6 @@
 body{
   background-color: rgb(210, 210, 166);
+
 }
 img{
   height: 60px;
@@ -22,10 +23,6 @@ button{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(1, 64, 64);
 }
-.Counter{
-  display: flex;
-  justify-content: center;
-}
 
 .Button{
   background-color: aqua;
@@ -39,11 +36,21 @@ button{
   background-color: aqua;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
-  width: 8rem;
-  
+
 }
-.Number{
+.ListGroup{
   display: flex;
   justify-content: center;
-
+  align-items: center;
+}
+.CardItem{
+  margin-left: 2rem;
+ background-color: white;
+ height: 300px;
+ width: 300px;
+ padding-bottom: 3rem;
+}
+.ItemImg{
+  height: 300px;
+  width: 300px;
 }
