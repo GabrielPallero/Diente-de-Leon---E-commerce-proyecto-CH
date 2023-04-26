@@ -7,8 +7,8 @@ img{
   width: 60px;
 }
 #logo{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 button{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -42,6 +42,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+ padding-bottom: 10rem;
 }
 .CardItem{
   margin-left: 2rem;
