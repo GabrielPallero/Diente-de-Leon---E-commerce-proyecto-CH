@@ -1,4 +1,5 @@
-const Item = ({id, name, img,description, price, stock}) =>{
+import { Link } from "react-router-dom"
+const Item = ({id, name, img, price, stock}) =>{
     return(
         <article className="CardItem">
             <header className="Header">
@@ -16,7 +17,7 @@ const Item = ({id, name, img,description, price, stock}) =>{
             </p>
         </section>
         <footer className="ItemDescripcion"> 
-        <button className="Option">Ver detalle</button>
+        <Link to={'/Item/${id}'} className="Option">Ver detalle</Link>
         </footer>
         </article> 
     )

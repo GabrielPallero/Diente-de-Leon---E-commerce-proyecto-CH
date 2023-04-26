@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { getProductos,getProductosByCategory } from "../../asyncMoock";
+import { getProductos, getProductosByCategory } from "../../asyncMoock";
 import ItemList from "../../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({greeting}) => {
     const [productos,setProductos] = useState([])
     const {categoryId} = useParams()
-    useEffect(()=>{
+    useEffect(()=>{ 
         const asyncFunc = categoryId ? getProductosByCategory : getProductos
         
         asyncFunc(categoryId)
