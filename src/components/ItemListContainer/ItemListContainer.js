@@ -14,7 +14,7 @@ const ItemListContainer = ({greeting}) => {
         .catch(error=>{console.error(error)})
     },[categoryId])
     return(
-        <div key={productos.id}>
+        <div>
             <h1 id="saludo">{greeting}</h1>
             <ItemList productos={productos}/>
         </div>
