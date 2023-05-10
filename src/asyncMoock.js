@@ -16,15 +16,15 @@ export const getProductos = () => {
 export const getProductosById = (itemId) =>{
     return new Promise ((resolve,)=>{
         setTimeout(() => {
-            resolve(productos.find(prod=> prod.id === itemId))
+            resolve(productos.map(prod=> prod.id === itemId))
         },2000)
 
-    })
+    },[])
 }
-export const getProductosByCategory = (categoryId) =>{
+export const getProductosByCategory = (categoryId) =>{  
     return new Promise ((resolve)=>{
         setTimeout(() => {
-            resolve(productos.map(prod=> prod.category === categoryId))
+            resolve(productos.filter(prod=> prod.category === categoryId))
         
         },2000)
 
