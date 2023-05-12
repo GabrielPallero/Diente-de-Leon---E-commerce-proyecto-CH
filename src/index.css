@@ -8,13 +8,13 @@ nav.NavBar{
   align-items: center;
   flex-direction: column;
 
-  background-color: rgb(68, 8, 8);
-  color: #fff;
+  background-color: rgb(203, 22, 22);
+  color: red;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 a.Option{
   text-decoration: none;
-  color: white;
+  color: black;
   margin-left: 1rem;
   height: 100px;
   font-weight: bolder;
@@ -22,7 +22,7 @@ a.Option{
   font-style: normal;
   
 }
-
+.OptionEnd{ color:black}
 img{
   height: 60px;
   width: 60px;

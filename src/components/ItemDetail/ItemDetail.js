@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ItemCount from '../ItemCount/ItemCount'
+import ItemCount from "../ItemCount/ItemCount";
 import { Link } from 'react-router-dom';
 
 const ItemDetail = ({id, name, img,category,description, price, stock}) =>{
@@ -30,10 +30,10 @@ const ItemDetail = ({id, name, img,category,description, price, stock}) =>{
         </section>
         <footer className="ItemFooter"> 
        { 
-        quantityAdded > 0 ? (
-            <Link to='/cart' className='Option'>Terminar Compra</Link>
+        quantityAdded > 0 ? ( <ItemCount initial={1} stock ={stock} onAdd={handleOnAdd}/>
+            
         ) :( 
-            <ItemCount initial={1} stock ={stock} onAdd={handleOnAdd}/>
+            <Link to='../Cart' className='OptionEnd'>Terminar Compra</Link>
        )}
         </footer>
         </article>
