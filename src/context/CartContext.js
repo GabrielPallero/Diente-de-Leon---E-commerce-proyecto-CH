@@ -13,16 +13,16 @@ export const CartProvider = ({children}) => {
         console.error('El producto ya fue agregado al carrito')
     }
    }
-   const removeItem =(itemId) => {
-    const cartUpdated = cart.filter(productos => productos.id !== itemId)
+   const removeItem =(ItemId) => {
+    const cartUpdated = cart.filter(prod => prod.id !== ItemId)
     setCart(cartUpdated)
    }
         const clearCart =() => {
             setCart([])
         }
     
-        const IsInCart = (itemId) => {
-            return cart.some(productos => productos.id === itemId)
+        const IsInCart = (ItemId) => {
+            return cart.some(prod => prod.id === ItemId)
         }
 
     return (

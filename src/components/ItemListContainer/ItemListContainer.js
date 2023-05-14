@@ -11,7 +11,6 @@ const ItemListContainer = ({greeting}) => {
         
         asyncFunc(categoryId)
         .then(response =>{setProductos(response)})
-       
     },[categoryId])
     return(
         <div>
